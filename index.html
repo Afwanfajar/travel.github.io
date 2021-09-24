@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traveling</title>
+
+    <link rel="shortcur icon" href="img/benner1.jpg">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span>T</span>ravel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active me-2" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#destination">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">About</a>
+              </li>
+            </ul>
+            <!-- login -->
+            <button class="btn1" onclick="document.getElementById('id01').style.display='block'" style="width: auto">Login</button>
+
+            <div id="id01" class="modal">
+              <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <h4 class="text-center mt-5">Log In ke Akun Anda</h4>
+                </div>
+
+                <div class="container1">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required />
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required />
+
+                  <button class="btn1 me-4" type="submit">Login</button>
+                  <label> <input type="checkbox" checked="checked" name="remember" /> Remember me </label>
+                </div>
+
+                <div class="container1" style="background-color: #f1f1f1">
+                  <span class="psw me-4">Forgot <a href="#">Password?</a></span>
+                  <h5 class="psw text-center">Belum punya akun? <a href="register.html">Daftar</a></h5>
+                </div>
+              </form>
+            </div>
+            <!-- end login -->
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--end navbar -->
+
+    <!-- scroll on top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- end scroll on top -->
+
+    <!-- banner -->
+    <section id="home">
+      <div class="main">
+        <div class="container">
+            <div class="kata">
+              <p>OUR PACKAGES</p>
+              <h3>Search your Holliday</h3>
+              <button type="button" class="btn btn1 mt-3">Explore ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end banner -->
+
+    <!-- destinasi -->
+    <section id="destination">
+      <div class="container">
+        <h1 class="text-center py-3 mt-5 judul">Destination</h1>
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi1.jpg" class="card-img-top" alt="d1">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Pulau Komodo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi2.jpg" class="card-img-top" alt="d2">
+              <div class="card-body">
+                <h5 class="card-title text-nowrap"><i class="fas fa-map-marker-alt"></i>Candi Prambanan</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi3.jpg" class="card-img-top" alt="d3">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Pulau Seribu</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi4.jpg" class="card-img-top" alt="d4">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Raja Ampat</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi5.jpg" class="card-img-top" alt="d5">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Labuan Bajo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi6.jpg" class="card-img-top" alt="d6">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Gunung Bromo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi7.jpg" class="card-img-top" alt="d7">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Candi Borobudur</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <div class="card mt-3">
+              <img src="img/destinasi8.jpg" class="card-img-top" alt="d8">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-map-marker-alt"></i>Gili Trawangan</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet!</p>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.1.200.000 <span>Rp.2.000000</span></div>
+                <a href="#" class="btn btn2 mt-3">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end destinasi -->
+
+    <!-- services -->
+    <section id="services">
+      <div class="container">
+        <h1 class="text-center py-1 mt-5 judul">Services</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 servis mt-5">
+              <h3 class="text-center mb-4"><i class="fas fa-hotel"></i></h3>
+              <h2 class="text-center">Hotels</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="col-md-6 servis mt-5">
+              <h3 class="text-center mb-4"> <i class="fas fa-utensils"></i></h3>
+              <h2 class="text-center">Food And Drinks</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 servis mt-5">
+              <h3 class="text-center mb-3"><i class="fas fa-bullhorn"></i></h3>
+              <h2 class="text-center">Safty Guide</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="col-md-4 servis mt-5">
+              <h3 class="text-center mb-3"> <i class="fas fa-hiking"></i></i></h3>
+              <h2 class="text-center">Adventures</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+            <div class="col-md-4 servis py-5">
+              <h3 class="text-center mb-3"><i class="fas fa-plane"></i></i></h3>
+              <h2 class="text-center">Fastest Travel</h2>
+              <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end services -->
+
+    <!-- book -->
+    <section id="book">
+      <div class="container">
+        <h1 class="text-center py-3 mt-5 judul">Booking</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/book1.png" class="img-fluid mt-5">
+          </div>
+          <div class="col-md-6 mt-5 booking">
+            <form action="" class="form1">
+              <h3 class="mb-3">Kota atau tujuan</h3>
+              <input type="text" placeholder="Tujuan anda" />
+              <h3 class="pt-3 mb-3">Arrivals</h3>
+              <input type="date"/>
+              <h3 class="pt-4 mb-3">Leaving</h3>
+              <input type="date"/>
+              <h3 class="pt-4 mb-3">Berapa anggota</h3>
+              <input type="number" placeholder="Jumlah"/>
+            </form>
+            <div class="col-lg-12 col-sm-12">
+              <button class="btn btn3" type="submit">Submit form</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end book -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <h1 class="text-center py-3 mt-5 judul">Contact</h1>
+        <div class="row">
+          <div class="col-md-6 mt-5">
+            <h3 class="text-center">Hubungi Kami</h3>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31727.881690961873!2d106.87605191479501!3d-6.265674709745597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2dcb11a7677%3A0xfdfafc879af457f6!2sHalim%20Perdana%20Kusumah%2C%20Kec.%20Makasar%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1631930606115!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-md-6 mt-5">
+            <h3>Kirimkan pesan kepada kami</h3>
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-md-12">
+                <label for="validationCustom01" class="form-label pt-4">Nama (Wajib)</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Masukan nama" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom02" class="form-label ">Email address</label>
+                <input type="email" class="form-control" id="validationCustom02" placeholder="name@example.com">
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Tulis pesan</label>
+              </div>
+    
+              <div class="col-12">
+                <button class="btn btn4 mb-4" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Contact -->
+    
+    <!-- about -->
+    <footer id="footer" class="section footer">
+      <div class="container">
+        <div class="footer-container pt-5">
+          <div class="footer-center">
+            <h3>Tentang Kami</h3>
+            <a href="#">Cara Pesan</a>
+            <a href="#">Hubungi Kami</a>
+            <a href="#">Pusat Bantuan</a>
+            <a href="#">Cicilan</a>
+            <a href="#">Tentang Kami</a>
+          </div>
+          <div class="footer-center">
+            <h3>Produk</h3>
+            <a href="#">Tiket Pesawat</a>
+            <a href="#">Hotel</a>
+            <a href="#">Tiket Kereta Api</a>
+            <a href="#">Pesawat + Hotel</a>
+            <a href="#">Tiket Bus & Travel</a>
+            <a href="#">Apartemen</a>
+            <a href="#">Antar Jemput Bandara</a>
+          </div>
+          <div class="tes">
+            <h3>Follow kami</h3>
+            <a href="#"><i class="fab fa-twitter me-3"></i>Twitter</a>
+            <a href="#"><i class="fab fa-facebook-square me-3"></i>Facebook</a>
+            <a href="#"><i class="fab fa-instagram me-3"></i>Instagram</a>
+            <a href="#"><i class="fab fa-youtube me-3"></i>Youtube</a>
+            <h3>Download App</h3>
+            <a href="https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Jul0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-id-1003227-med-hasem-py-Evergreen-Jul0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700035189602361_creativeid_406910879709_device_c&gclid=CjwKCAjw7rWKBhAtEiwAJ3CWLCBIOCWV4Cd6bKLGQNxx02Qu9jRMMPF3ctg8b5svR1SKFHp6IY4Z-RoCbBEQAvD_BwE&gclsrc=aw.ds">
+              <img importance="low" loading="lazy" src="img/playstore.svg">
+            </a>
+            <a href="https://www.apple.com/app-store/">
+              <img importance="low" loading="lazy" src="img/app store.svg" alt="">
+            </a>
+          </div>
+          <div class="footer-center">
+            <h3>CONTACT US</h3>
+            <div>
+              <span>
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+              Halim jakarta timur 13610
+            </div>
+            <div>
+              <span>
+                <i class="far fa-envelope"></i>
+              </span>
+              company@gmail.com
+            </div>
+            <div>
+              <span>
+                <i class="fas fa-phone"></i>
+              </span>
+              456-456-4512
+            </div>
+            <div>
+              <span>
+                <i class="far fa-paper-plane"></i>
+              </span>
+              Jakarta, Indonesia
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="credit text-center">created by afwanfs | all rights reserved © 2021</div>
+      </div>      
+    </footer>
+    <!-- end about -->
+
+    <!-- js bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- scroll on top -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById('myBtn');
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = 'block';
+        } else {
+          mybutton.style.display = 'none';
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
+  </body>
+</html>

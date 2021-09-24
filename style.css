@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: MuseoSans, sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.judul {
+  font-family: 'Poppins', sans-serif;
+  background: #11a7d9;
+  width: 100%;
+  color: white;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  letter-spacing: 2px;
+}
+/* navbar */
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 25px;
+}
+
+.navbar-brand span {
+  color: red;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0 0.2rem;
+  color: black;
+  transition: all 500ms ease-in-out;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #11a7d9;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/* login */
+
+/* Full-width input fields */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.btn1 {
+  background-color: #11a7d9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+/*   position the close button */
+
+.container1 {
+  padding: 16px;
+}
+
+.psw {
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* baner */
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(img/benner12.jpg) no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  background-position: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 100%;
+  }
+}
+
+.kata {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+}
+
+.kata h3 {
+  font-size: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.kata p {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+/* destinasi */
+
+.btn2 {
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  background-color: #11a7d9;
+  color: white;
+  font-weight: 700;
+  border-radius: 40px;
+}
+
+.card {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.card-title i {
+  color: #11a7d9;
+  margin-right: 10px;
+}
+
+.stars i {
+  color: #555;
+}
+
+.price {
+  font-size: 25px;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.price span {
+  color: #666;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+/* services */
+.servis {
+  border: solid 1px transparent;
+}
+
+.servis h3 i {
+  font-size: 50px;
+}
+
+.servis:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+/* booking */
+
+.booking h3 {
+  font-size: 20px;
+}
+
+.booking input {
+  width: 100%;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-transform: none;
+}
+
+.btn3 {
+  background-color: #11a7d9;
+  padding: 14px 10px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form1 {
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+/* contact */
+#contact h3 {
+  font-weight: bold;
+}
+
+.maps {
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.btn4 {
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #11a7d9;
+  width: 20%;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  line-height: 3rem;
+}
+
+.footer-center span {
+  margin-right: 1rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+}
+
+.footer-center a {
+  display: block;
+  text-decoration: none;
+  color: #959595;
+}
+
+.tes a {
+  display: block;
+  text-decoration: none;
+  color: #959595;
+}
+
+.tes a:hover {
+  text-decoration: underline;
+  color: #0770cd;
+}
+
+.tes img {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.footer-center a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.credit {
+  font-size: 10px;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 998px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
